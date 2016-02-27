@@ -1,0 +1,24 @@
+body { padding-top: 70px; }
+
+.jumbotron {
+	background-image:url('http://s3.amazonaws.com/fotor.cdn/share.url/34f762dd522a47669b19ef01fb2e586d.jpeg');
+	height: 400px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#welcome {
+	font-size: 80px;
+}
+
+.jumbotron p {
+	color: #fff;
+	font-size: 30px;
+	text-shadow: 3px 3px 10px #000;
+}
+
+#searchbar {
+	position: absolute;
+	left: 100px;
+	right: 100px;
+}

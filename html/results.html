@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8" />
+    <title>Results</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="../css/results.css">
+    <script src="../js/results.js"></script>
+  </head>	
+  
+  
+  
+  <body>
+  
+	  <nav class="navbar navbar-default navbar-fixed-top">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="welcome.html">Replate</a>
+		    </div>
+		
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <form class="navbar-form navbar-left" role="search">
+		        <div class="form-group">
+		          <input type="text" class="form-control" placeholder="Search">
+		        </div>
+		        <button type="submit" class="btn btn-default">Submit</button>
+		      </form>
+		      <ul class="nav navbar-nav navbar-right">
+		      	<li><a href="welcome.html">Home </a></li>
+		        <li><a href="recipe.html">Add Recipe </a></li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Settings <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">Vegetarian</a></li>
+		            <li><a href="#">Vegan</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">Logout</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		
+		
+  	<div id="results">
+  		<div class="results">
+  			<div class="panel panel-default">
+  			
+				<div class="panel-heading">
+					<strong>Sort By: </strong>
+					<div class="btn-group" role="group" aria-label="...">
+					  
+					  <div class="btn-group">
+					  	<button type="button" class="btn btn-default" id="relevance">
+					  		<span class="glyphicon glyphicon-usd"></span>
+					  		Relevance
+					  	</button>
+					  </div>
+					  
+					  <div class="btn-group">
+					  	<button type="button" class="btn btn-default" id="name">
+					  		<span class="glyphicon glyphicon-sort"></span>
+					  		Name	
+					  	</button>
+					  </div>
+					  
+					  <div class="btn-group">
+					  	<button type="button" class="btn btn-default" id="price">
+					  		<span class="glyphicon glyphicon-sort"></span>
+					  		Price	
+					  	</button>
+					  </div>
+					  
+					</div>
+				
+					
+			        <div class="btn-group pull-right">
+			            <a href="#" id="list" class="btn btn-default btn-med"><span class="glyphicon glyphicon-th-list">
+			            </span>List</a> <a href="#" id="grid" class="btn btn-default btn-med"><span
+			                class="glyphicon glyphicon-th"></span>Grid</a>
+			        </div>
+				</div>
+				
+				<div class="panel-body">
+					<div id="recipelist">
+						
+						<!--<div class="item  col-xs-4 col-lg-4">-->
+				  <!--          <div class="thumbnail">-->
+				  <!--              <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />-->
+				  <!--              <div class="caption">-->
+				  <!--                  <h4 class="group inner list-group-item-heading">-->
+				  <!--                      Recipe Name</h4>-->
+						<!--			<div class="group inner panel-group pull-right ingredients">-->
+						<!--			  <div class="panel panel-info">-->
+						<!--			    <div class="panel-heading clickable" id="panel99">-->
+						<!--			      <h4 class="panel-title" data-toggle="collapse" data-target="#collapse99">-->
+						<!--			        Ingredients List-->
+						<!--			        <span class="pull-right"><i class="glyphicon glyphicon-chevron-down"></i></span>-->
+						<!--			      </h4>-->
+						<!--			    </div>-->
+						<!--			    <div id="collapse99" class="panel-collapse collapse">-->
+						<!--			      <ul class="list-group">-->
+						<!--			        <li class="list-group-item">-->
+						<!--			        	<span class="badge"> 2 cups</span>-->
+						<!--			        	Ingredient 1-->
+						<!--			        </li>-->
+						<!--			        <li class="list-group-item">-->
+						<!--			        	<span class="badge"> 1 lbs</span>-->
+						<!--			        	Ingredient 2-->
+						<!--			        </li>-->
+						<!--			        <li class="list-group-item">-->
+						<!--			        	<span class="badge"> $ 0.90</span>-->
+						<!--			        	Ingredient 3-->
+						<!--			        </li>-->
+						<!--			        <li class="list-group-item">-->
+						<!--			        	<span class="badge"> $ 0.90</span>-->
+						<!--			        	Ingredient 3-->
+						<!--			        </li>-->
+						<!--			        <li class="list-group-item">-->
+						<!--			        	<span class="badge"> $ 0.90</span>-->
+						<!--			        	Ingredient 3-->
+						<!--			        </li>-->
+						<!--			        <li class="list-group-item">-->
+						<!--			        	<span class="badge"> $ 0.90</span>-->
+						<!--			        	Ingredient 3-->
+						<!--			        </li>-->
+						<!--			      </ul>-->
+						<!--			    </div>-->
+						<!--			  </div>-->
+						<!--			</div>-->
+				  <!--                  <div class="row">-->
+				  <!--                      <div class="col-xs-12 col-md-6 pull-right">-->
+				  <!--                          <p class="lead">-->
+				  <!--                              $21.000-->
+				  <!--                              <span class="label label-success pull-right">Category</span>	-->
+				  <!--                           </p>-->
+				  <!--                      </div>-->
+				  <!--                  </div>-->
+				  <!--              </div>-->
+				  <!--          </div>-->
+						<!--</div>-->
+        
+					</div>
+				</div>
+			</div>
+  		</div>
+  	</div>
+  	
+  </body>
+  
+  
+</html>

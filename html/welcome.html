@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Welcome!</title>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	
+	<script src="../js/select2.min.js"></script>
+	<link rel="stylesheet" href="../css/select2.min.css">
+	
+	<script src="../js/welcome.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/welcome.css">
+</head>	
+
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="welcome.html">Replate</a>
+	    </div>
+	
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <form class="navbar-form navbar-left" role="search">
+	        <div class="form-group">
+	          <input type="text" class="form-control" placeholder="Search">
+	        </div>
+	        <button type="submit" class="btn btn-default">Submit</button>
+	      </form>
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li class="active"><a href="welcome.html">Home <span class="sr-only">(current)</span></a></li>
+	        <li><a href="recipe.html">Add Recipe </a></li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Settings <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="#">Vegetarian</a></li>
+	            <li><a href="#">Vegan</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#">Login</a></li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+	
+	<div class="container">
+		<div class="jumbotron">
+		  <p id="welcome">Welcome to Replate!<p>
+		  <p>Ever wondered what you could have eaten? Well worry no more! Search for recipes around the price range of your last meal below!</p>
+		  <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>	-->
+		</div>
+	</div>
+	
+	<div id="searchbar">
+		<!--<div class="well col-md-6">-->
+		
+			<form class="form-inline" id="searchbar-form">
+			
+				<div class="container col-xs-2">
+					<div class="input-group">
+				    	<span class="input-group-addon">$</span>
+						<input id="min" type="number" class="form-control" placeholder="0.00" aria-label="Amount (to the nearest dollar)">
+						<span class="input-group-addon alert-success">Min</span>
+				    </div> 
+				</div>
+			    
+			    <div class="container col-xs-2">
+				    <div class="input-group">
+				    	<span class="input-group-addon">$</span>
+						<input id="max" type="number" class="form-control" placeholder="15.00" aria-label="Amount (to the nearest dollar)">
+						<span class="input-group-addon alert-danger">Max</span>
+				    </div>
+				</div>
+			    
+			    <div class="input-group">
+			    	<select class="categories">
+					  <option value="1">Chicken</option>
+					  <option value="2">Pork</option>
+					  <option value="3">Beef</option>
+					  <option value="4">Side</option>
+					  <option value="5">Breakfast</option>
+					  <option value="6">Dessert</option>
+					</select>
+			    </div>
+				
+				<button type="submit" class="btn btn-primary" id="findByPriceRange">Submit</button>
+				
+			</form>
+			
+		<!--</div>-->
+	</div>
+	
+  </body>
+
+</html>

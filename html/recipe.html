@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8" />
+    <title>Recipe</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../js/select2.min.js"></script>
+    <script src="../js/react/react.js"></script>
+    <script src="../js/react/reactdom.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    <script src="../js/require.js"></script>
+    <script type="text/babel" src="../js/recipe.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="../css/recipe.css">
+  </head>	
+
+  <body>
+  
+	  <nav class="navbar navbar-default navbar-fixed-top">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="welcome.html">Replate</a>
+		    </div>
+		
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <form class="navbar-form navbar-left" role="search">
+		        <div class="form-group">
+		          <input type="text" class="form-control" placeholder="Search">
+		        </div>
+		        <button type="submit" class="btn btn-default">Submit</button>
+		      </form>
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="welcome.html">Home </a></li>
+		        <li class="active"><a href="recipe.html">Add Recipe <span class="sr-only">(current)</span></a></li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Settings <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">Vegetarian</a></li>
+		            <li><a href="#">Vegan</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">Random Color :D</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+
+	<div id="target" style="width:800px; margin:0 auto;">
+		
+	</div>
+	<!--<script type="text/babel">-->
+	<!--	var InputField = React.createClass(-->
+	<!--			{-->
+	<!--				render: function() {-->
+	<!--					return (-->
+	<!--						<input value="hi"/>-->
+	<!--					);-->
+	<!--				}-->
+	<!--			}-->
+	<!--		);-->
+	<!--	ReactDOM.render(<InputField/>, document.getElementById("target"));-->
+	<!--</script>-->
+	
+	
+	
+	<!--<form class="form-inline">-->
+	<!--	<h2>Submit a recipe here!</h2>-->
+	<!--	<div class="form-group">-->
+	<!--		<label for="recipeName">Recipe Name</label>-->
+	<!--		<input class="form-control" id="recipeName" placeholder="KMP's chicken">-->
+	<!--	</div>-->
+	<!--	<div class="form-group">-->
+ <!--   		<label for="email">Email</label>-->
+ <!--   		<input class="form-control" id="email" placeholder="KMP@topo.unc.edu">-->
+ <!-- 		</div>-->
+	<!--</form>-->
+
+  
+ <!-- 	<div id="toolbar">-->
+	<!--	<div id="menu">-->
+	<!--		<a href="welcome.html">Search</a>-->
+	<!--		<a href="recipe.html">Add Recipe</a>-->
+	<!--		<button type="button" id="settings">Settings</button>-->
+	<!--	</div>-->
+	<!--</div>-->
+	
+	<!--<div id="recipeform">-->
+	<!--	<div class="recipeform">-->
+		
+	<!--		<div class="recipeform__input-wrapper">-->
+				
+	<!--			<label class="recipeform__recipepicture">-->
+	<!--				<input-->
+	<!--				  id="recipepicture"-->
+	<!--				  type="file"-->
+	<!--				  name="recipepicture"-->
+	<!--				  accept="image/*"-->
+	<!--				 >-->
+	<!--			</label>-->
+				
+	<!--			<label class="recipeform__recipelink">-->
+	<!--				<input-->
+	<!--				  id="recipelink"-->
+	<!--				  type="url"-->
+	<!--				  autocomplete="off"-->
+	<!--				  name="recipelink"-->
+	<!--				 >-->
+	<!--			</label>-->
+				
+	<!--			<label class="recipeform__ingredientslist">-->
+	<!--				<ul id="ingredientslist" style="list-style-type:none">-->
+	<!--					<li>-->
+	<!--						<input-->
+	<!--						  id="ingredient_1"-->
+	<!--						  type="text"-->
+	<!--						  autocomplete="on"-->
+	<!--						  name="ingredient_1"-->
+	<!--						>-->
+	<!--					</li>-->
+	<!--					<li>-->
+	<!--						<input-->
+	<!--						  id="ingredient_2"-->
+	<!--						  type="text"-->
+	<!--						  autocomplete="on"-->
+	<!--						  name="ingredient_2"-->
+	<!--						>-->
+	<!--					</li>-->
+	<!--					<li>-->
+	<!--						<input-->
+	<!--						  id="ingredient_3"-->
+	<!--						  type="text"-->
+	<!--						  autocomplete="on"-->
+	<!--						  name="ingredient_3"-->
+	<!--						>-->
+	<!--					</li>-->
+	<!--				</ul>-->
+	<!--			</label>-->
+				
+	<!--		</div>-->
+			
+	<!--		<button-->
+	<!--		  id="submit_food"-->
+	<!--		  type="submit"-->
+	<!--		  class="searchbar__submit">-->
+	<!--		  Submit-->
+	<!--		</button>-->
+			
+	<!--	</div>-->
+	<!--</div>-->
+  
+  </body>
+  
+  
+</html>
